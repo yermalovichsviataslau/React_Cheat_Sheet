@@ -1,6 +1,6 @@
-import { CodeBlock } from "../CodeBlock";
-import Concept from "../Concept";
-import SwitchTopic from "../SwitchTopic";
+import { CodeBlock } from "./CodeBlock";
+import Concept from "./Concept";
+import SwitchTopic from "./SwitchTopic";
 
 function JsxTopic() {
   return (

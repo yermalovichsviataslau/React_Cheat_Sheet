@@ -1,6 +1,6 @@
-import Advice from "../Advice";
-import { CodeBlock } from "../CodeBlock";
-import SwitchTopic from "../SwitchTopic";
+import Advice from "./Advice";
+import { CodeBlock } from "./CodeBlock";
+import SwitchTopic from "./SwitchTopic";
 
 function ComponentsTopic() {
   return (

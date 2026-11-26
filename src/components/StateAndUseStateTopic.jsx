@@ -1,6 +1,7 @@
-import Advice from "../Advice";
-import { CodeBlock } from "../CodeBlock";
-import Concept from "../Concept";
+import Advice from "./Advice";
+import { CodeBlock } from "./CodeBlock";
+import Concept from "./Concept";
+import SwitchTopic from "./SwitchTopic";
 
 function StateAndUseStateTopic() {
   return (
@@ -399,7 +400,7 @@ const UserProfile = () => {
 export default UserProfile;`}
       />
       <p>В этом примере:</p>
-      <ol>
+      <ol style={{marginBottom: '10px'}}> 
         <li>
           Мы инициализируем стейт user как объект с тремя свойствами: name, age
           и email.
@@ -422,6 +423,22 @@ export default UserProfile;`}
           для всех полей ввода.
         </li>
       </ol>
+
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+
+          marginBottom: "20px",
+        }}
+      >
+        <SwitchTopic to={"/topic/props"}>
+          переведущая тема: Props
+        </SwitchTopic>
+        <SwitchTopic to={"/topic/events"}>
+          следущая тема: Events
+        </SwitchTopic>
+      </div>
     </div>
   );
 }

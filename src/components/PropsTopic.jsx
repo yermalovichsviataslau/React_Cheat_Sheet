@@ -1,7 +1,7 @@
-import Advice from "../Advice";
-import { CodeBlock } from "../CodeBlock";
-import Concept from "../Concept";
-import SwitchTopic from "../SwitchTopic";
+import Advice from "./Advice";
+import { CodeBlock } from "./CodeBlock";
+import Concept from "./Concept";
+import SwitchTopic from "./SwitchTopic";
 
 function PropsTopic() {
   return (
@@ -141,7 +141,7 @@ JavaScript-функции: родитель передаёт значения, �
   return <h1>Привет, {name}!</h1>
 }`}
       />
-      <p>
+      <p style={{marginBottom: '10px'}}>
         Если интерфейсу понадобятся изменяемые данные, позже для этого будет
         изучен state.
       </p>
@@ -153,11 +153,11 @@ JavaScript-функции: родитель передаёт значения, �
           marginBottom: "20px",
         }}
       >
-        <SwitchTopic to={"/topic/jsx"}>
+        <SwitchTopic to={"/topic/components"}>
           переведущая тема: Components
         </SwitchTopic>
-        <SwitchTopic to={"/topic/props"}>
-          следущая тема: State и UseState{" "}
+        <SwitchTopic to={"/topic/state"}>
+          следущая тема: State и UseState
         </SwitchTopic>
       </div>
     </div>

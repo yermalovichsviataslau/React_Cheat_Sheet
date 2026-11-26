@@ -5,11 +5,14 @@ import ThemeContext from "./components/ThemeContext";
 import { Route, Routes } from "react-router";
 import Home from "./components/Home";
 import NavigationLink from "./components/NavigationLink";
-import ComponentsTopic from "./components/Topic/ComponentsTopic";
-import JsxTopic from "./components/Topic/JsxTopic";
-import PropsTopic from "./components/Topic/PropsTopic";
-import StateAndUseStateTopic from "./components/Topic/StateAndUseStateTopic";
-import EventsTopic from "./components/Topic/EventsTopic";
+import ComponentsTopic from "./components/ComponentsTopic";
+import JsxTopic from "./components/JsxTopic";
+import PropsTopic from "./components/PropsTopic";
+import StateAndUseStateTopic from "./components/StateAndUseStateTopic";
+import EventsTopic from "./components/EventsTopic";
+import ListKeyFragmentRefStrictMode from "./components/ListKeyFragmentRefStrictMode";
+import Lifecycle from "./components/Lifecycle";
+import UseEffectTopic from "./components/UseEffectTopic";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -41,6 +44,11 @@ function App() {
           <Route path="props" element={<PropsTopic />} />
           <Route path="state" element={<StateAndUseStateTopic />} />
           <Route path="events" element={<EventsTopic />} />
+          <Route path="key" element={<ListKeyFragmentRefStrictMode />}/>
+          <Route path="lifecycle" element={<Lifecycle />}/>
+          <Route path="effect" element={<UseEffectTopic />}/>
+          
+
         </Route>
       </Routes>
     </ThemeContext.Provider>

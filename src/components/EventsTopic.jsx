@@ -1,6 +1,7 @@
-import Advice from "../Advice";
-import { CodeBlock } from "../CodeBlock";
-import Concept from "../Concept";
+import Advice from "./Advice";
+import { CodeBlock } from "./CodeBlock";
+import Concept from "./Concept";
+import SwitchTopic from "./SwitchTopic";
 
 function EventsTopic() {
   return (
@@ -334,10 +335,25 @@ const MyButton = () => {
 
 export default MyButton;`}/>
   <p>Здесь, после того как сработает первый обработчик, событие не будет передано другим обработчикам на том же элементе, и «Второй обработчик» не будет выполнен.</p>
-    <Advice info={'Обратите внимание'}>
+    <Advice info={'Обратите внимание'} >
       <p>Особенность JSX</p>
       <p>В JSX нельзя повесить два атрибута onClick на один элемент — второй просто перезапишет первый. В примере выше оба обработчика вызываются внутри одной функции, поэтому stopImmediatePropagation() демонстрируется именно так: сам приём относится к нативным addEventListener-обработчикам.</p>
     </Advice>
+    <div
+        style={{
+          display: "flex",
+          justifyContent: "space-between",
+          marginTop: '20px',
+          marginBottom: "20px",
+        }}
+      >
+        <SwitchTopic to={"/topic/state"}>
+          переведущая тема: State и useState
+        </SwitchTopic>
+        <SwitchTopic to={"/topic/key"}>
+          следущая тема: Списки, key, Fragment, refs и StrictMode
+        </SwitchTopic>
+      </div>
     </div>
   );
 }
