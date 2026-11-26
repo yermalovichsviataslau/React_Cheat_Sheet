@@ -13,6 +13,7 @@ import EventsTopic from "./components/EventsTopic";
 import ListKeyFragmentRefStrictMode from "./components/ListKeyFragmentRefStrictMode";
 import Lifecycle from "./components/Lifecycle";
 import UseEffectTopic from "./components/UseEffectTopic";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   const [theme, setTheme] = useState(() => {
@@ -48,8 +49,8 @@ function App() {
           <Route path="lifecycle" element={<Lifecycle />}/>
           <Route path="effect" element={<UseEffectTopic />}/>
           
-
         </Route>
+        <Route path="*" element={<ErrorPage />}/>
       </Routes>
     </ThemeContext.Provider>
   );

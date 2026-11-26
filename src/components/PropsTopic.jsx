@@ -7,6 +7,10 @@ function PropsTopic() {
   return (
     <div>
       <h1>Props</h1>
+      <p>Видео:</p>
+      <a href="https://www.youtube.com/watch?v=1ra1U4sjCG0" className="videoLink">
+        🔁 Передача данных через props: как компоненты общаются друг с другом
+      </a>
       <Concept info={"Props — это аргументы функции"}>
         До этого компоненты отображали только текст, записанный прямо внутри
         них. Props позволяют родительскому компоненту передать дочернему данные
@@ -105,12 +109,11 @@ JavaScript-функции: родитель передаёт значения, �
   )
 }`}
       />
-      
-      <Advice info={'Совет'}>
-          Поток данных
-Данные идут только сверху вниз: App → UserCard → StatusBadge.
-      </Advice>
 
+      <Advice info={"Совет"}>
+        Поток данных Данные идут только сверху вниз: App → UserCard →
+        StatusBadge.
+      </Advice>
 
       <h2>children</h2>
       <p>
@@ -141,7 +144,7 @@ JavaScript-функции: родитель передаёт значения, �
   return <h1>Привет, {name}!</h1>
 }`}
       />
-      <p style={{marginBottom: '10px'}}>
+      <p style={{ marginBottom: "10px" }}>
         Если интерфейсу понадобятся изменяемые данные, позже для этого будет
         изучен state.
       </p>

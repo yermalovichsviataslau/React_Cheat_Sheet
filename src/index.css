@@ -184,3 +184,11 @@ nav > a.active,  .link{
   color: var(--text-h);
   background-color: var(--bg-hover);
 }
+
+.videoLink{
+  text-decoration: none;
+  color: var(--text);
+}
+.videoLink:hover{
+  color: var(--text-h);
+}

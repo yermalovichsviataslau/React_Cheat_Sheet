@@ -7,6 +7,10 @@ function StateAndUseStateTopic() {
   return (
     <div>
       <h1>State и useState</h1>
+      <p>Видео:</p>
+      <a href="https://www.youtube.com/watch?v=Fg668s4bpVQ">
+        📦 useState: управление состоянием компонента
+      </a>
       <h2>Что такое state</h2>
       <Concept info={"Состояние компонента"}>
         State (состояние) в React — это место, где компонент хранит свои
@@ -87,7 +91,7 @@ state.count = 10;`}
         основе его текущего значения, используй функцию:
       </p>
       <CodeBlock code={`setCount((prevCount) => prevCount + 1);`} />
-      <Advice info={'Совет'}>
+      <Advice info={"Совет"}>
         <p>Функциональный сеттер</p>
         <p>Этот подход гарантирует, что изменения будут выполнены корректно.</p>
       </Advice>
@@ -307,7 +311,7 @@ const Example = () => {
         текста, который зависит от значения state.
       </p>
       <h3>Передача state в дочерние компоненты</h3>
-      <Advice info={'Совет'}>
+      <Advice info={"Совет"}>
         <p>State уходит вниз через props</p>
         <p>State можно передавать в дочерние компоненты при помощи props.</p>
       </Advice>
@@ -400,7 +404,7 @@ const UserProfile = () => {
 export default UserProfile;`}
       />
       <p>В этом примере:</p>
-      <ol style={{marginBottom: '10px'}}> 
+      <ol style={{ marginBottom: "10px" }}>
         <li>
           Мы инициализируем стейт user как объект с тремя свойствами: name, age
           и email.
@@ -432,12 +436,8 @@ export default UserProfile;`}
           marginBottom: "20px",
         }}
       >
-        <SwitchTopic to={"/topic/props"}>
-          переведущая тема: Props
-        </SwitchTopic>
-        <SwitchTopic to={"/topic/events"}>
-          следущая тема: Events
-        </SwitchTopic>
+        <SwitchTopic to={"/topic/props"}>переведущая тема: Props</SwitchTopic>
+        <SwitchTopic to={"/topic/events"}>следущая тема: Events</SwitchTopic>
       </div>
     </div>
   );

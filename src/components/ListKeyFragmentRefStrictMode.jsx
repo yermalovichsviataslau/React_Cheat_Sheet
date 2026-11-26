@@ -7,12 +7,12 @@ function ListKeyFragmentRefStrictMode() {
   return (
     <div>
       <h1>Списки, key, Fragment, refs и StrictMode</h1>
-      <p>Видосы:</p>
+      <p>Видео:</p>
       <div style={{ display: "flex", flexDirection: "column" }}>
-        <a href="https://youtu.be/H7orJ54ogUg?si=jPsJw0TdMMa5GqRF">
+        <a href="https://youtu.be/H7orJ54ogUg?si=jPsJw0TdMMa5GqRF" className="videoLink">
           🧩 React.Fragment и key в списках: как не словить баг при рендере
         </a>
-        <a href="https://www.youtube.com/watch?v=yWBceit8jgg">
+        <a href="https://www.youtube.com/watch?v=yWBceit8jgg" className="videoLink">
           🧷 useRef: работа с DOM и сохранение значений без ререндера
         </a>
       </div>

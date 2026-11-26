@@ -7,6 +7,11 @@ function JsxTopic() {
     <div>
       <h1>JSX Разметка</h1>
 
+      <p>Видео:</p>
+      <a href="https://www.youtube.com/watch?v=Mezoks0darA" className="videoLink"> 
+        🏗 Функциональные компоненты в React: базовая архитектура UI
+      </a>
+
       <h2>Что такое JSX</h2>
       <Concept>
         JSX — синтаксис, похожий на HTML, который можно писать внутри
